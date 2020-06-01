@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, Response, session
 from flask.json import jsonify
 from bson import json_util
-from pymongo import MongoClient
 from flask_pymongo import PyMongo
 from timezoneUtils import *
 import jinja2
@@ -11,7 +10,9 @@ import time
 import pytz
 
 app = Flask(__name__)
+
 app.secret_key = "NONE"
+
 app.config["MONGO_URI"] = os.environ['MONGODB_URI']
 client = PyMongo(app)
 db = client['timezone-db']
