@@ -12,7 +12,7 @@ import pytz
 app = Flask(__name__)
 app.secret_key = "NONE"
 
-client = MongoClient(os.environ['MONGOLAB_URI'])
+client = MongoClient(os.environ['MONGODB_URI'])
 db = client['timezone-db']
 
 users = db.users
