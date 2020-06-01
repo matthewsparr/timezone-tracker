@@ -12,8 +12,8 @@ import pytz
 
 app = Flask(__name__)
 app.secret_key = "NONE"
-
-client = PyMongo(os.environ['MONGODB_URI'])
+app.config["MONGO_URI"] = os.environ['MONGODB_URI']
+client = PyMongo(app)
 db = client['timezone-db']
 
 users = db.users
