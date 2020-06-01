@@ -1,0 +1,109 @@
+<div id="tracker-content-window">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div id="all-timezone-cards-container">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+            <div class="timezone-card panel panel-primary">
+                <div class="panel-heading">
+                    <h5 class="timezone-card-title-header">timezones</h5>
+
+                    <button class="add-timezone-button btn btn-info btn-sm" data-toggle="modal" data-target='#add-timezone-popup'>
+                        <span class='glyphicon glyphicon-plus'></span><span> add timezone</span>
+                    </button>
+                    <button type="button" class="edit-timezone-card-button btn btn-warning btn-sm">
+                        <span class='glyphicon glyphicon-pencil'></span>
+                    </button>
+                </div>
+                <div class="timezone-card-loading-mask-div panel-body">
+                    <div class="circularG_main" style="display:none;">
+                        <div class="circularG_1 circularG"></div>
+                        <div class="circularG_2 circularG"></div>
+                        <div class="circularG_3 circularG"></div>
+                        <div class="circularG_4 circularG"></div>
+                        <div class="circularG_5 circularG"></div>
+                        <div class="circularG_6 circularG"></div>
+                        <div class="circularG_7 circularG"></div>
+                        <div class="circularG_8 circularG"></div>
+                    </div>
+                </div>
+                <div class="timezones-container panel-body" style="display:none;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add-timezone-popup" class="modal fade form-horizontal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+            </div>
+            <div class="modal-body">
+                <div id="timezone-input-container" class="form-group">
+                    <label for="time-zone-label" class="col-sm-3 control-label">timezone</label>
+                    <div id="timezone-select-picker-container" class="col-sm-9">
+                        <select id="time-zone-input" class="select-picker">
+                            <option value="" selected disabled>select timezone</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="error-message-add-timezone" class="error-text add-timzone-info-text"></p>
+            </div>
+            <div class="modal-footer">
+                <div class='col-sm-3'></div>
+                <div class='col-sm-6'>
+                    <button id="submit-timezone-info-button" type="button" class="btn btn-sm btn-info">add timezone</button>
+                    <button id="cancel-timezone-info-button" type="button" class="btn btn-sm btn-default" data-dismiss="modal">
+                        cancel
+                    </button>
+                </div>
+                <div class='col-sm-3'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<center>
+    <div hidden id="user-info-container">
+            <table id="users-table"  style="white-space:nowrap;">
+                <tbody>
+                <tr>
+                     <td><b>users</b></td>
+                </tr>
+                </tbody>
+            </table>
+    <br>
+    <br>
+            <center>
+                <span id="user-timezones-title"><b>user timezones</b></span> <br>
+                <button hidden  id="add-user-timezone-button">add timezone</button>
+                <br>
+                <select hidden  id="add-user-timezone-select">
+                </select>
+                <br>
+                <div hidden id="password-reset-div">
+                <span> enter new password </span> <br>
+                <input id="reset-user-password-input" type="password"></input> <br>
+                <input id="password-reset-button" type="submit"  value="submit"></input>
+                <span id="password-reset-error-message"></span>
+                </div>
+                <br>
+            <table id="user-timezone-table">
+
+            </table>
+            </center>
+    </div>
+</center>
+
+
+<script src='/static/js/Timezones.js'></script>
+<script src='/static/js/TimezoneCards.js'></script>
+<script src='/static/js/app-pages/tracker.js'></script>

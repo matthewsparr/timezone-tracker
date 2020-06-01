@@ -1,0 +1,366 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#add-timezone-popup {
+    min-width: 288px !important;
+}
+
+.add-timezone-input {
+    margin: 2px;
+}
+
+.add-timezone-info-text,
+.login-register-info-text {
+    margin-bottom: 5px;
+    display: none;
+    width: 90%;
+    margin: auto;
+}
+
+#add-timezone-card-button {
+    width: 50%;
+    max-width: 280px;
+    margin: 5px 0 10px 0;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+.bootstrap-select.form-control:not([class*=col-]) {
+    width: 100px;
+}
+
+.bootstrap-select.btn-group .btn {
+    padding: 8px 12px 8px 25px;
+    height: 38px;
+}
+
+.bootstrap-select.btn-group .btn .caret {
+    left: 12px;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    text-align: right;
+}
+
+.close {
+    color: #ffffff;
+    text-shadow: 0 1px 0 #000000;
+    outline: none !important;
+}
+
+.close span {
+    padding: 0 4px;
+}
+
+#confirm-delete-modal * {
+    max-width: 350px;
+}
+
+#confirm-delete-modal p {
+    padding: 0 20px;
+}
+
+.container-fluid>.navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#content-window {
+    position: relative;
+}
+#user-table {
+    position: relative;
+}
+
+#timezone-input-container .dropdown-menu.open {
+    border: 1px solid black;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.error-text {
+    color: #fc6a6a;
+}
+
+#error-message-add-timezone {
+    text-align: center;
+}
+
+#timezone-name-input,
+#weight-or-dist-input,
+#reps-or-time-input {
+    margin: 2px;
+}
+
+.timezone-container {
+    overflow: auto;
+}
+
+.timezone-name-section {
+    padding: 5px 5px;
+}
+
+#timezone-input-container .bootstrap-select {
+    width: 85% !important;
+}
+
+#timezone-input-container .bootstrap-select.btn-group .dropdown-menu li:first-child {
+    display: none;
+}
+
+#timezone-input-container .bootstrap-select.btn-group .btn .filter-option {
+    padding-left: 5px;
+    text-align: left;
+}
+
+.fading-popup-message {
+    display: none;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 10px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.form-control {
+    margin: auto;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.glyphicon-user {
+    padding-right: 5px;
+}
+
+
+.inline-element {
+    display: inline-block;
+}
+
+.login-page-button {
+    margin: 5px;
+    width: 25%;
+}
+
+#logout-button {
+    cursor: pointer;
+}
+
+#login-window > h1 {
+    margin-bottom: 5px;
+}
+
+#login-window div {
+    padding: 0;
+}
+
+#login-window,
+#register-window {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.modal {
+    width: auto;
+    margin: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    top: 20px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    border: none;
+    padding: 5px;
+}
+
+.modal-header h3 {
+    margin: 5px 20px;
+}
+
+.modal-footer {
+    margin-bottom: 10px;
+}
+
+
+.panel .panel-heading h5 {
+    display: inline-block;
+}
+
+.panel .panel-heading button {
+    float: right;
+    margin-top: 3px;
+}
+
+.panel-heading {
+    padding: 3px 10px;
+}
+
+.navbar {
+    min-height: 52px;
+    margin-bottom: 15px;
+}
+
+.nav .dropdown-toggle {
+    height: 50px;
+}
+
+#registerButton {
+    margin-top: 10px;
+    width: 35%;
+}
+
+.remove-timezone-button {
+    margin: 0 0 0 4px;
+    height: 18px;
+    font-size: 18px;
+    overflow: visible !important;
+}
+
+.remove-timezone-card-button,
+.edit-timezone-card-button {
+    margin: 0 3px;
+    padding: 7px;
+}
+
+#user-info-container {
+    width: 100%;
+}
+
+.highlight {
+    background-color: #fcfb9a;
+}
+
+#weight-or-dist-selector,
+#reps-or-time-selector,
+.bootstrap-select {
+    margin: 2px 0;
+    color: white;
+    background-color: #272b30;
+}
+
+.timezones-container {
+    padding: 10px 10px 0px 10px;
+}
+
+.timezone-info-section {
+    padding: 0;
+}
+
+.timezone-info-list-item {
+    list-style-type: none;
+    min-width: 125px;
+}
+
+.timezone-list {
+    text-align: right;
+    padding: 0 5px 0 0;
+    margin: 0;
+}
+
+.timezone-option {
+    color: black;
+}
+
+#submit-timezone-info-button,
+#cancel-timezone-info-button {
+    margin-bottom: 5px;
+}
+
+#submit-timezone-info-button {
+    width: 70%;
+}
+
+#title-container {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#title-container h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.well {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.timezone-card {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.timezone-card .panel-body {
+    min-height: 35px;
+}
+
+.timezone-card-loading-mask-div {
+    padding: 30px 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .modal {
+        width: 90%;
+        margin: auto;
+    }
+    #title-container h1 {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bootstrap-select.btn-group .btn .caret {
+        left: 7px;
+    }
+    .bootstrap-select.btn-group .btn {
+        padding: 8px 12px 8px 18px;
+    }
+    .bootstrap-select.form-control:not([class*=col-]) {
+        width: 80px;
+    }
+    #timezone-input-container div[class*=col-] {
+        text-align: center;
+    }
+    #timezone-name-input {
+        margin: auto;
+    }
+    .modal-body label {
+        display: none;
+    }
+    .modal-dialog {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    #weight-or-dist-input,
+    #reps-or-time-input {
+        max-width: 205px;
+    }
+}
