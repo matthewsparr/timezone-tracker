@@ -12,7 +12,7 @@ import pytz
 app = Flask(__name__)
 app.secret_key = "NONE"
 
-client = MongoClient(os.environ.get('MONGO_URI'))
+client = MongoClient(os.environ['MONGOLAB_URI'])
 db = client['timezone-db']
 
 users = db.users
@@ -20,7 +20,7 @@ timezoneCards = db.timezonecards
 timezones = db.timezones
 current_user = None;
 
-users.update_one({'username':'admin'}, {'$set':{'permissions':'admin'}})
+##users.update_one({'username':'admin'}, {'$set':{'permissions':'admin'}})
 
 def currentUserPermissions():
     return users.find_one({'username':retrieve_username()})['permissions']
