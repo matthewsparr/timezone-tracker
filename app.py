@@ -15,7 +15,7 @@ app.secret_key = "NONE"
 
 app.config["MONGO_URI"] = os.environ['MONGODB_URI']
 client = PyMongo(app)
-db = client['timezone-db']
+db = client.db
 
 users = db.users
 timezoneCards = db.timezonecards
