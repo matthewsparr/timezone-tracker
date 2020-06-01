@@ -6,3 +6,4 @@ bcrypt==3.1.2
 pytz==2018.5
 Flask-PyMongo==2.0.0
 gevent
+werkzeug<1.0
