@@ -1,0 +1,40 @@
+
+<div class="timezone-container">
+    <div class="timezone-name-section col-xs-6">
+    </div>
+        <div class="timezone-info-section">
+        <ul class="timezone-list">
+
+        </ul>
+    </div>
+        <div class="timezone-section">
+        <script type="text/javascript">
+            function updateTimes() {
+                var timeZoneElements = [];
+                var timeElements = []
+                var offsetElements = []
+                $('.timezone-name-section').each(function(index){timeZoneElements.push($(this))});
+                $('.timezone-section').each(function(index){timeElements.push($(this))});
+                for (var i = 0, l = timeElements.length; i < l; i++) {
+                    var timeZone = String(timeZoneElements[i].html());
+                    var datetime = new Date().toLocaleString('en-US', {timeZone: timeZone})
+                    var offset = Math.round((Date.parse(datetime) - new Date())/ 36e5);
+                    if (offset >= 0){
+                        var offset_symbol = "+";
+                    } else {
+                        var offset_symbol = "";
+                    }
+                    timeElements[i].html(datetime + " &nbsp;&nbsp;(<b>" + offset_symbol + offset + " hours</b>)");
+                }
+            }
+            $(function(){
+                setInterval(function(){updateTimes();}, 1000);
+                updateTimes();
+            });
+            updateTimes();
+
+        </script>
+
+    </div>
+
+
