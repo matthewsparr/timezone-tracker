@@ -1,6 +1,6 @@
 # timezone-tracker
 #
-Single-page web app built with Flask and AJAX that allows user to store select timezones and view the current time in each on a dashboard.
+Single-page web app built with Flask and AJAX that allows user to select timezones and view the current time in each on a dashboard.
 #
 Features a functional REST API with user permissions and authentication.
 #
