@@ -4,5 +4,5 @@ Single-page web app built with Flask and using AJAX that allows user to store se
 #
 Features a functional REST API with user permissions and authentication.
 #
-App hosted at: 
+App hosted at -  
 https://timezone-tracker-msparr.herokuapp.com
