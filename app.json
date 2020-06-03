@@ -1,6 +1,6 @@
 {
-    "name": "workout.",
-    "description": "Web-application designed to track workouts using a clear and simple interface.",
+    "name": "timezone tracker",
+    "description": "Web-application designed to track timezones.",
     "buildpacks": [{
         "url": "heroku/python"
     }]
